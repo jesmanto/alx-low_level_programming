@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include<unistd.h>
+#include <unistd.h>
 
 /**
- * main - Entry main
+ * main - Entry point
  *
- * Result: 1 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
