@@ -16,7 +16,7 @@ void jack_bauer(void)
 	{
 		r = '0';
 
-		while (r <= '4')
+		while (r <= '3')
 		{
 			m = '0';
 
