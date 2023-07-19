@@ -14,8 +14,8 @@ void times_table(void)
 		for (c = 0; c <= 9; c++)
 		{
 			product = r * c;
-			tens = product / 10;
-			ones = product % 10;
+			t = product / 10;
+			o = product % 10;
 			if (c == 0)
 			{
 				_putchar('0');
@@ -25,14 +25,14 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(ones + '0');
+				_putchar(o + '0');
 			}
 			else
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(tens + '0');
-				_putchar(ones + '0');
+				_putchar(t + '0');
+				_putchar(o + '0');
 			}
 		}
 		_putchar('\n');
