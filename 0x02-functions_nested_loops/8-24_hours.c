@@ -14,12 +14,10 @@ void jack_bauer(void)
 
 	while (h <= '2')
 	{
-		_putchar(h);
 		r = '0';
 
 		while (r <= '4')
 		{
-			_putchar(r);
 			m = '0';
 
 			while (m <= '5')
