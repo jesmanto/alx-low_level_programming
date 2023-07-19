@@ -28,11 +28,11 @@ void jack_bauer(void)
 
 				while (n <= 9)
 				{
-					_putchar(h);
-					_putchar(r);
+					_putchar('h');
+					_putchar('r');
 					_putchar(':');
-					_putchar(m);
-					_putchar(n);
+					_putchar('m');
+					_putchar('n');
 					_putchar('\n');
 
 					n++;
