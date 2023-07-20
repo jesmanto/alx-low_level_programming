@@ -14,26 +14,23 @@ void times_table(void)
 		for (c = 0; c <= 9; c++)
 		{
 			product = r * c;
-			t = product / 10;
-			o = product % 10;
-			if (c == 0)
+
+			_putchar(product);
+			if (c < 9)
 			{
-				_putchar('0');
+				if (product < 10)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 			}
-			else if (product > 10)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(o + '0');
-			}
-			else
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(t + '0');
-				_putchar(o + '0');
-			}
+
 		}
 		_putchar('\n');
 	}
