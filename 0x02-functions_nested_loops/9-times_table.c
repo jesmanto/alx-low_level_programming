@@ -28,20 +28,16 @@ void times_table(void)
 				_putchar(d + '0');
 				_putchar(m + '0');
 			}
-
-			if (c < 9)
+			if (c < 9 && product > 9)
 			{
-				if (product > 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-				else
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
+				_putchar(',');
+				_putchar(' ');
+			}
+			else if (c < 9 && product < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
 
 		}
