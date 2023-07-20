@@ -20,7 +20,7 @@ void times_table(void)
 			d = product / 10;
 
 			if (product <= 9)
-				_putchar(product)
+				_putchar(product);
 			else
 			{
 				_putchar(d);
