@@ -25,13 +25,18 @@ void print_diagonal(int n)
 			while (b <= n)
 			{
 				if (b != l)
+				{
 					_putchar(' ');
+				}
 				else
+				{
 					_putchar('\\');
+					break;
+				}
 				b++;
 			}
 			l++;
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
