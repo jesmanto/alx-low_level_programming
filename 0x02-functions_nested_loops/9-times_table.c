@@ -25,7 +25,7 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(d + '0');
+				_putchar(product + '0');
 				_putchar(m + '0');
 			}
 			if (c < 9 && product > 9)
