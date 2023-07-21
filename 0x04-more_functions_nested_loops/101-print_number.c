@@ -42,7 +42,7 @@ void print_number(int n)
 	while (place >= 0)
 	{
 		divisor = power(10, place);
-		digit = (n / divisor) % 10;
+		digit = ((n / divisor) % 10);
 
 		if (digit == 0 && start == 0)
 			place--;
