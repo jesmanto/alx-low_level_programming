@@ -1,47 +1,25 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-long int isprime(long int n)
-{
-	long int i;
-
-	if (n <= 1)
-		return (0);
-
-	i = 0;
-
-	for (i = 0; i * i <= n; i++)
-	{
-		if (n % i == 0)
-			return (0);
-	}
-	return (1);
-}
-
-long int gethighestprime(long int n)
-{
-	long int  highest = 1;
-
-	long int i;
-
-	for (i = 2; i * i <= n; i++)
-	{
-		if (n % i == 0 && isprime(i))
-		{
-			highest = i;
-
-			while (n % i == 0)
-				n /= i;
-		}
-	}
-
-	if (n  > 1 && isprime(n))
-		highest = n;
-	return highest;
-}
-
+/**
+ * main - prints the highest prime factor
+ *
+ * Return: 0
+ */
 int main(void)
 {
-	printf("%ld\n", gethighestprime(612852475143L));
+	long int num = 612852475143;
+	long int quo = num;
+	long int d = 2;
+
+	while (quo != d)
+	{
+		if (quo % d == 0)
+			quo /= d;
+		else
+			d++;
+	}
+
+	printf("%li\n", quo);
 	return (0);
 }

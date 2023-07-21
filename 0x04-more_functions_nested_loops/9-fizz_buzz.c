@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -13,14 +14,14 @@ int main(void)
 	while (num <= 100)
 	{
 		if (num % 5 == 0 && num % 3 == 0)
-			printf("%s ", "FizzBuzz");
+			printf("FizzBuzz ");
 		else if (num % 3 == 0)
-			printf("%s ", "Fizz");
+			printf("Fizz ");
 		else if (num % 5 == 0)
 			if  (num == 100)
-				printf("%s", "Buzz");
+				printf("Buzz");
 			else
-				printf("%s ", "Buzz");
+				printf("Buzz ");
 		else
 			printf("%d ", num);
 		num++;
