@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int isprime(long int n)
+long int isprime(long int n)
 {
-	int i;
+	long int i;
 
 	if (n <= 1)
 		return (0);
@@ -18,11 +18,11 @@ int isprime(long int n)
 	return (1);
 }
 
-int gethighestprime(long int n)
+long int gethighestprime(long int n)
 {
-	int highest = 1;
+	long int  highest = 1;
 
-	int i;
+	long int i;
 
 	for (i = 2; i * i <= n; i++)
 	{
@@ -42,6 +42,6 @@ int gethighestprime(long int n)
 
 int main(void)
 {
-	printf("%d\n", gethighestprime(612852475143));
+	printf("%ld\n", gethighestprime(612852475143L));
 	return (0);
 }
