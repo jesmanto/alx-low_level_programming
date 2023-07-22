@@ -19,7 +19,7 @@ void times_table(void)
 
 			d = product / 10;
 
-			if (product > 0)
+			if (c > 0)
 			{
 				_putchar(',');
 				_putchar(' ');
