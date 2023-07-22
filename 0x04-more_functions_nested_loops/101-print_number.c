@@ -50,7 +50,7 @@ void print_number(int n)
 		{
 			start = 1;
 			if (neg == 1)
-				_putchar('_');
+				_putchar('-');
 			_putchar('0' + digit);
 			place--;
 		}
