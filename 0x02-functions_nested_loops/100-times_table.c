@@ -10,11 +10,9 @@ void print_times_table(int n)
 {
 	int i, j, product;
 
-	if (n > 15 || n < 0)
-		putchar('\n');
-	else if (n == 0)
-		putchar(48);
-	else
+	if (n == 0)
+		printf("%d\n", n);
+	else if (n < 15 && n > 0)
 	{
 		for (i = 0; i <= n; i++)
 		{
