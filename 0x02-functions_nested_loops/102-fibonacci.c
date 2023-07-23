@@ -6,17 +6,23 @@
  */
 int main(void)
 {
-	int sum, n;
+	long int i, n1, n2, n;
 
-	sum = 0;
-	n = 1;
+	n = 0;
+	n1 = 0;
+	n2 = 1;
+	i = 0;
 
-	while (n <= 50)
+	while (i < 50)
 	{
-		sum += n;
-
-		printf("%d\n", sum);
-		n++;
+		n1 = n;
+		printf("%li", n1 + n2);
+		if (i < 49)
+			printf(", ");
+		n = n2;
+		n2 += n1;
+		i++;
 	}
+	putchar('\n');
 	return (0);
 }
