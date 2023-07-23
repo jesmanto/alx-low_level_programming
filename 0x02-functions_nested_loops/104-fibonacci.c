@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <inttypes.h>
 
 /**
  * main - print the first 98 fibonacci
@@ -20,8 +21,13 @@ int main(void)
 	{
 		n1 = n;
 		sum = n1 + n2;
-		printf("%ld, ", sum);
+		if (i > 90)
+			printf("%09lu", sum);
+		else
+			printf("%ld", sum);
 
+		if (i < 97)
+			printf(", ");
 		n = n2;
 		n2 = sum;
 	}
