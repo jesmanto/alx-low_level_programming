@@ -12,7 +12,7 @@ void puts_half(char *str)
 	int length, n, m;
 
 	if (strlen(str) == 0)
-		putchar('\n');
+		_putchar('\n');
 	else
 	{
 		n = 0;
@@ -24,9 +24,9 @@ void puts_half(char *str)
 		m = length / 2;
 		while (m <= length)
 		{
-			putchar(str[m]);
+			_putchar(str[m]);
 			m++;
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
