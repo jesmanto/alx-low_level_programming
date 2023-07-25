@@ -11,11 +11,10 @@ void rev_string(char *s)
 {
 	int pos, count, length;
 
-	char c[100];
+	char c[500];
 	strcpy(c, s);
 
 	length = strlen(s);
-
 	count = length - 1;
 	pos = 0;
 
