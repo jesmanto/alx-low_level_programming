@@ -9,18 +9,23 @@
  */
 void puts_half(char *str)
 {
-	int length, n;
+	int length, n, m;
 
 	if (strlen(str) == 0)
 		putchar('\n');
 	else
 	{
-		length = strlen(str);
-		n = ((length + 1) / 2);
-		while (n <= length)
+		n = 0;
+		while (str[n] != '\0')
 		{
-			putchar(str[n]);
 			n++;
+		}
+		length = n;
+		m = length / 2;
+		while (m <= length)
+		{
+			putchar(str[m]);
+			m++;
 		}
 		putchar('\n');
 	}
