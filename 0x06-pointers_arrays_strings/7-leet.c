@@ -18,14 +18,16 @@ char *leet(char *c)
 	{
 		if (c[i] == 'A' || c[i] == 'a')
 			c[i] = '4';
-		if (c[i] == 'E' || c[i] == 'e')
+		else if (c[i] == 'E' || c[i] == 'e')
 			c[i] = '3';
-		if (c[i] == 'o' || c[i] == 'O')
+		else if (c[i] == 'o' || c[i] == 'O')
 			c[i] = '0';
-		if (c[i] == 't' || c[i] == 'T')
+		else if (c[i] == 't' || c[i] == 'T')
 			c[i] = '7';
-		if (c[i] == 'l' || c[i] == 'L')
+		else if (c[i] == 'l' || c[i] == 'L')
 			c[i] = '1';
+		else
+			c[i] = c[i];
 		i++;
 	}
 	return (c);
