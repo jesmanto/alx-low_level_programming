@@ -7,3 +7,4 @@ char *string_toupper(char *c);
 char *cap_string(char *c);
 void iterator(int* separator, int val, char* el, char e);
 char *leet(char *);
+char *_encode(char *c);

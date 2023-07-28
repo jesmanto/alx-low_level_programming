@@ -7,8 +7,18 @@
  */
 char *leet(char *c)
 {
-	int i;
+	return (_encode(c));
+}
 
+/**
+ * _encode - encodes a string into 1337
+ * @c: string literal
+ * Return: string literal
+ */
+char *_encode(char *c)
+{
+	int i;
+	
 	i = 0;
 	for (; c[i] != '\0'; i++)
 	{
