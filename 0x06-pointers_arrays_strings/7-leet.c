@@ -7,31 +7,19 @@
  */
 char *leet(char *c)
 {
-	return (_encode(c));
-}
+	char *s = c;
+	char l[] = { 'a', 'e', 'o', 't', 'l' };
+	char m[] = { 4, 3, 0, 7, 1 };
+	int i = 0;
 
-/**
- * _encode - encodes a string into 1337
- * @c: string literal
- * Return: string literal
- */
-char *_encode(char *c)
-{
-	int i;
-	
-	i = 0;
-	for (; c[i] != '\0'; i++)
+	while (*c)
 	{
-		if (c[i] == 'A' || c[i] == 'a')
-			c[i] = '4';
-		if (c[i] == 'E' || c[i] == 'e')
-			c[i] = '3';
-		if (c[i] == 'o' || c[i] == 'O')
-			c[i] = '0';
-		if (c[i] == 't' || c[i] == 'T')
-			c[i] = '7';
-		if (c[i] == 'l' || c[i] == 'L')
-			c[i] = '1';
+		for (i = 0; i < 5; i++)
+		{
+			if (*c == l[i] || *c == l[i] - 32)
+				*c = m[i] + '0';
+		}
+		c++;
 	}
-	return (c);
+	return (s);
 }
