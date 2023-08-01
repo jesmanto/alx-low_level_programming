@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * _strpbrk - locates the 1st occurance of a char
