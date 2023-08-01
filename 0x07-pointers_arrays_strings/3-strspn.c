@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * _strspn - gets the lenght of a substring
@@ -13,10 +15,9 @@ unsigned int _strspn(char *s, char *accept)
 	c = 0;
 	m = 0;
 
-
 	while (*s)
 	{
-		for (i = 0; accept(i); i++)
+		for (i = 0; accept[i]; i++)
 		{
 			if (*s == accept[i])
 			{
@@ -24,11 +25,10 @@ unsigned int _strspn(char *s, char *accept)
 				m = 1;
 			}
 		}
-
 		if (!m)
 			return (c);
 		m = 0;
-		s++
+		s++;
 	}
 	return (c);
 }
