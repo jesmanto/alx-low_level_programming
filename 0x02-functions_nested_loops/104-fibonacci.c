@@ -22,7 +22,7 @@ int main(void)
 		n1 = n;
 		sum = n1 + n2;
 		if (i > 90)
-			printf("%09lu", sum);
+			printf("%020lu", sum);
 		else
 			printf("%ld", sum);
 

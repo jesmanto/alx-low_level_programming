@@ -36,7 +36,7 @@ void print_number(int n)
 	if (n < 0)
 	{
 		neg = 1;
-		n *= -1;
+		n = n * -1;
 	}
 
 	while (place >= 0)
@@ -45,7 +45,9 @@ void print_number(int n)
 		digit = ((n / divisor) % 10);
 
 		if (digit == 0 && start == 0)
+		{
 			place--;
+		}
 		else if (digit != 0 && start == 0)
 		{
 			start = 1;
@@ -61,5 +63,7 @@ void print_number(int n)
 		}
 	}
 		if (digit == 0 && divisor == 1)
+		{
 			_putchar(48);
+		}
 }
