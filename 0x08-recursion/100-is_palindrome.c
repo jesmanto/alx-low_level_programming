@@ -18,7 +18,7 @@ int _strcmp(char *s, int i, int l)
 		return (1);
 	i++;
 	l--;
-	return _strcmp(s, i, l);
+	return (_strcmp(s, i, l));
 }
 
 /**
