@@ -15,5 +15,5 @@ typedef struct list_s
 	struct list_s *next;
 } list_t;
 size_t print_list(const list_t *h);
-list_t* creatnode (char *s);
+list_t *creatnode(char *s);
 #endif
