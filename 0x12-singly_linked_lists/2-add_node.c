@@ -12,7 +12,7 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	char *s = strdup(str);
+	char *s = (str) ? strdup(str) : NULL;
 	unsigned int l = 0;
 	list_t *newnode;
 
@@ -26,7 +26,7 @@ list_t *add_node(list_t **head, const char *str)
 			l++;
 			s++;
 		}
-		newnode->str = strdup(str);
+		newnode->str = (str) ? strdup(str) : NULL;
 		newnode->len = l;
 		newnode->next = *head;
 		*head = newnode;
