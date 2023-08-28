@@ -9,7 +9,7 @@
  */
 int main(int argc, char __attribute__((__unused__)) *argv[])
 {
-	int j = 0, i = 1, num, sum = 0;
+	int j, i = 1, num, sum = 0;
 
 	if (argc < 2)
 	{
@@ -19,16 +19,7 @@ int main(int argc, char __attribute__((__unused__)) *argv[])
 
 	for (; i < argc; i++)
 	{
-		if (argv[i][0] >= 'a' && argv[i][0] <= 'z')
-		{
-			printf("Error\n");
-			return (1);
-		}
-		if (argv[i][0] >= 'A' && argv[i][0] <= 'Z')
-		{
-			printf("Error\n");
-			return (1);
-		}
+		j = 0;
 		for (; argv[i][j] != '\0'; j++)
 			if (argv[i][j] >= 'a' && argv[i][j] <= 'z')
 			{
