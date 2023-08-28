@@ -39,5 +39,5 @@ int main(int argc, char __attribute__((__unused__)) *argv[])
 		sum  += num;
 	}
 	printf("%d\n", sum);
-	exit(EXIT_SUCCESS);
+	return (0);
 }
