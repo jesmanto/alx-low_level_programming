@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
-#include <limits.h>
 /**
  * main - entry point
  * @argc: number of arguments
@@ -10,7 +9,7 @@
  */
 int main(int argc, char __attribute__((__unused__)) *argv[])
 {
-	int i = 1, num, sum = 0;
+	int j = 0, i = 1, num, sum = 0;
 
 	if (argc < 2)
 	{
@@ -20,7 +19,6 @@ int main(int argc, char __attribute__((__unused__)) *argv[])
 
 	for (; i < argc; i++)
 	{
-		num = atoi(argv[i]);
 		if (argv[i][0] >= 'a' && argv[i][0] <= 'z')
 		{
 			printf("Error\n");
@@ -31,6 +29,12 @@ int main(int argc, char __attribute__((__unused__)) *argv[])
 			printf("Error\n");
 			return (1);
 		}
+		for (; argv[i][j] != '\0'; j++)
+			if (argv[i][j] >= 'a' && argv[i][j] <= 'z')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		num = atoi(argv[i]);
 		sum  += num;
 	}
